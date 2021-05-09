@@ -12,9 +12,21 @@ docker compose influxdb grafana
 
 ```sh
 docker-compose run k6
-docker-compose run k6 run scripts/01_simple.js
+docker-compose run k6 run //scripts/sample.js
 ```
 
-### Grafana K6 Dashboard
+#### K6 Metrics
+
+https://k6.io/docs/using-k6/metrics
+
+#### K6 + InfluxDB
+
+[https://k6.io/docs/results-visualization/influxdb-+-grafana/](https://k6.io/docs/results-visualization/influxdb-+-grafana/)
+
+#### Grafana K6 Dashboard
 
 https://grafana.com/grafana/dashboards/2587
+
+### Notes
+
+image: influxdb:2.0+ has a trouble with K6 authentication with InfluxDB.

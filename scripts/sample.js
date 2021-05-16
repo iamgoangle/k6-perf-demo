@@ -1,5 +1,6 @@
 import http from 'k6/http';
 import { check } from "k6";
+
 export let options = {
   stages: [
       // Ramp-up from 1 to 5 VUs in 5s
